@@ -1,0 +1,788 @@
+ERROR - 2022-06-08 03:25:00 --> Check constraint 'competency_reports_chk_1' is violated.
+CRITICAL - 2022-06-08 03:25:00 --> Check constraint 'competency_reports_chk_1' is violated.
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    5,
+                    2,
+                    5,
+                    3,
+                    0,
+                    \'[0,0,0,0,0,0,0,0,0,0,0,0]\'
+                )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    5,
+                    2,
+                    5,
+                    3,
+                    0,
+                    \'[0,0,0,0,0,0,0,0,0,0,0,0]\'
+                )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    5,
+                    2,
+                    5,
+                    3,
+                    0,
+                    \'[0,0,0,0,0,0,0,0,0,0,0,0]\'
+                )')
+ 4 APPPATH\Controllers\Evaluation.php(47): CodeIgniter\Database\BaseConnection->query('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    :employee_id:,
+                    :evaluator_id:,
+                    :evaluation_period_id:,
+                    3,
+                    :score:,
+                    :survey_ans:
+                )', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Evaluation->store()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluation))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-08 03:26:33 --> Check constraint 'competency_reports_chk_1' is violated.
+CRITICAL - 2022-06-08 03:26:33 --> Check constraint 'competency_reports_chk_1' is violated.
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    5,
+                    2,
+                    5,
+                    3,
+                    0,
+                    \'[0,0,0,0,0,0,0,0,0,0,0,0]\'
+                )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    5,
+                    2,
+                    5,
+                    3,
+                    0,
+                    \'[0,0,0,0,0,0,0,0,0,0,0,0]\'
+                )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    5,
+                    2,
+                    5,
+                    3,
+                    0,
+                    \'[0,0,0,0,0,0,0,0,0,0,0,0]\'
+                )')
+ 4 APPPATH\Controllers\Evaluation.php(47): CodeIgniter\Database\BaseConnection->query('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    :employee_id:,
+                    :evaluator_id:,
+                    :evaluation_period_id:,
+                    3,
+                    :score:,
+                    :survey_ans:
+                )', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Evaluation->store()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluation))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-08 03:26:38 --> Check constraint 'competency_reports_chk_1' is violated.
+CRITICAL - 2022-06-08 03:26:38 --> Check constraint 'competency_reports_chk_1' is violated.
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    5,
+                    2,
+                    5,
+                    3,
+                    0,
+                    \'[0,0,0,0,0,0,0,0,0,0,0,0]\'
+                )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    5,
+                    2,
+                    5,
+                    3,
+                    0,
+                    \'[0,0,0,0,0,0,0,0,0,0,0,0]\'
+                )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    5,
+                    2,
+                    5,
+                    3,
+                    0,
+                    \'[0,0,0,0,0,0,0,0,0,0,0,0]\'
+                )')
+ 4 APPPATH\Controllers\Evaluation.php(47): CodeIgniter\Database\BaseConnection->query('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    :employee_id:,
+                    :evaluator_id:,
+                    :evaluation_period_id:,
+                    3,
+                    :score:,
+                    :survey_ans:
+                )', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Evaluation->store()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluation))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-08 03:28:23 --> Check constraint 'competency_reports_chk_1' is violated.
+CRITICAL - 2022-06-08 03:28:23 --> Check constraint 'competency_reports_chk_1' is violated.
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    5,
+                    2,
+                    5,
+                    3,
+                    0,
+                    \'[0,0,0,0,0,0,0,0,0,0,0,0]\'
+                )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    5,
+                    2,
+                    5,
+                    3,
+                    0,
+                    \'[0,0,0,0,0,0,0,0,0,0,0,0]\'
+                )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    5,
+                    2,
+                    5,
+                    3,
+                    0,
+                    \'[0,0,0,0,0,0,0,0,0,0,0,0]\'
+                )')
+ 4 APPPATH\Controllers\Evaluation.php(47): CodeIgniter\Database\BaseConnection->query('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    :employee_id:,
+                    :evaluator_id:,
+                    :evaluation_period_id:,
+                    3,
+                    :score:,
+                    :survey_ans:
+                )', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Evaluation->store()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluation))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-08 03:29:17 --> Check constraint 'competency_reports_chk_1' is violated.
+CRITICAL - 2022-06-08 03:29:17 --> Check constraint 'competency_reports_chk_1' is violated.
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    5,
+                    2,
+                    5,
+                    3,
+                    0,
+                    \'[0,0,0,0,0,0,0,0,0,0,0,0]\'
+                )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    5,
+                    2,
+                    5,
+                    3,
+                    0,
+                    \'[0,0,0,0,0,0,0,0,0,0,0,0]\'
+                )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    5,
+                    2,
+                    5,
+                    3,
+                    0,
+                    \'[0,0,0,0,0,0,0,0,0,0,0,0]\'
+                )')
+ 4 APPPATH\Controllers\Evaluation.php(47): CodeIgniter\Database\BaseConnection->query('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    :employee_id:,
+                    :evaluator_id:,
+                    :evaluation_period_id:,
+                    3,
+                    :score:,
+                    :survey_ans:
+                )', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Evaluation->store()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluation))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-08 03:29:29 --> Check constraint 'competency_reports_chk_1' is violated.
+CRITICAL - 2022-06-08 03:29:29 --> Check constraint 'competency_reports_chk_1' is violated.
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    5,
+                    2,
+                    5,
+                    3,
+                    0,
+                    \'[0,0,0,0,0,0,0,0,0,0,0,0]\'
+                )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    5,
+                    2,
+                    5,
+                    3,
+                    0,
+                    \'[0,0,0,0,0,0,0,0,0,0,0,0]\'
+                )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    5,
+                    2,
+                    5,
+                    3,
+                    0,
+                    \'[0,0,0,0,0,0,0,0,0,0,0,0]\'
+                )')
+ 4 APPPATH\Controllers\Evaluation.php(47): CodeIgniter\Database\BaseConnection->query('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    :employee_id:,
+                    :evaluator_id:,
+                    :evaluation_period_id:,
+                    3,
+                    :score:,
+                    :survey_ans:
+                )', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Evaluation->store()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluation))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-08 03:29:55 --> Check constraint 'competency_reports_chk_1' is violated.
+CRITICAL - 2022-06-08 03:29:55 --> Check constraint 'competency_reports_chk_1' is violated.
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    5,
+                    2,
+                    5,
+                    3,
+                    0,
+                    \'[0,0,0,0,0,0,0,0,0,0,0,0]\'
+                )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    5,
+                    2,
+                    5,
+                    3,
+                    0,
+                    \'[0,0,0,0,0,0,0,0,0,0,0,0]\'
+                )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    5,
+                    2,
+                    5,
+                    3,
+                    0,
+                    \'[0,0,0,0,0,0,0,0,0,0,0,0]\'
+                )')
+ 4 APPPATH\Controllers\Evaluation.php(47): CodeIgniter\Database\BaseConnection->query('INSERT INTO `competency_reports`(
+                    `employee_id`,
+                    `evaluator_id`,
+                    `evaluation_period_id`,
+                    `status_id`,
+                    `score`,
+                    `survey_ans`
+                )
+                VALUES(
+                    :employee_id:,
+                    :evaluator_id:,
+                    :evaluation_period_id:,
+                    3,
+                    :score:,
+                    :survey_ans:
+                )', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Evaluation->store()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluation))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-08 05:27:17 --> Undefined property: stdClass::$email
+in APPPATH\Views\evaluator\evaluate_employee.php on line 49.
+ 1 APPPATH\Views\evaluator\evaluate_employee.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$email', 'APPPATH\\Views\\evaluator\\evaluate_employee.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\evaluator\\evaluate_employee.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('evaluator/evaluate_employee', [], true)
+ 5 APPPATH\Controllers\Evaluator.php(14): view('evaluator/evaluate_employee', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Evaluator->index('2')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluator))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-08 06:39:06 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Manager.php on line 85.
+ 1 APPPATH\Controllers\Manager.php(37): App\Controllers\Manager->getEvaluatorsSubmissions('1')
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Manager->index('1')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-08 06:40:21 --> Undefined array key 4
+in APPPATH\Controllers\Manager.php on line 94.
+ 1 APPPATH\Controllers\Manager.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'APPPATH\\Controllers\\Manager.php', 94)
+ 2 APPPATH\Controllers\Manager.php(37): App\Controllers\Manager->getEvaluatorsSubmissions('1')
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Manager->index('1')
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-08 06:57:25 --> Array to string conversion
+in APPPATH\Views\manager\show.php on line 55.
+ 1 APPPATH\Views\manager\show.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\manager\\show.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\manager\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('manager/show.php', [], true)
+ 5 APPPATH\Controllers\Manager.php(89): view('manager/show.php', [...])
+ 6 APPPATH\Controllers\Manager.php(37): App\Controllers\Manager->getEvaluatorsSubmissions('1')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Manager->index('1')
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-08 06:59:28 --> Array to string conversion
+in APPPATH\Views\manager\show.php on line 55.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\manager\\show.php', 55)
+ 2 APPPATH\Views\manager\show.php(55): join(' ', [...])
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\manager\\show.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('manager/show.php', [], true)
+ 6 APPPATH\Controllers\Manager.php(89): view('manager/show.php', [...])
+ 7 APPPATH\Controllers\Manager.php(37): App\Controllers\Manager->getEvaluatorsSubmissions('1')
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Manager->index('1')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-08 07:00:19 --> Undefined variable $evaluation
+in APPPATH\Views\manager\show.php on line 60.
+ 1 APPPATH\Views\manager\show.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evaluation', 'APPPATH\\Views\\manager\\show.php', 60)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\manager\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('manager/show.php', [], true)
+ 5 APPPATH\Controllers\Manager.php(89): view('manager/show.php', [...])
+ 6 APPPATH\Controllers\Manager.php(37): App\Controllers\Manager->getEvaluatorsSubmissions('1')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Manager->index('1')
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-08 07:01:03 --> Array to string conversion
+in APPPATH\Views\manager\show.php on line 55.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\manager\\show.php', 55)
+ 2 APPPATH\Views\manager\show.php(55): join(' ', [...])
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\manager\\show.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('manager/show.php', [], true)
+ 6 APPPATH\Controllers\Manager.php(89): view('manager/show.php', [...])
+ 7 APPPATH\Controllers\Manager.php(37): App\Controllers\Manager->getEvaluatorsSubmissions('1')
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Manager->index('1')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-08 07:04:46 --> Array to string conversion
+in APPPATH\Views\manager\show.php on line 55.
+ 1 APPPATH\Views\manager\show.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\manager\\show.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\manager\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('manager/show.php', [], true)
+ 5 APPPATH\Controllers\Manager.php(89): view('manager/show.php', [...])
+ 6 APPPATH\Controllers\Manager.php(37): App\Controllers\Manager->getEvaluatorsSubmissions('1')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Manager->index('1')
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-08 07:06:19 --> Array to string conversion
+in APPPATH\Views\manager\show.php on line 55.
+ 1 APPPATH\Views\manager\show.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\manager\\show.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\manager\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('manager/show.php', [], true)
+ 5 APPPATH\Controllers\Manager.php(89): view('manager/show.php', [...])
+ 6 APPPATH\Controllers\Manager.php(37): App\Controllers\Manager->getEvaluatorsSubmissions('1')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Manager->index('1')
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-08 07:07:18 --> syntax error, unexpected token ")"
+in APPPATH\Controllers\Manager.php on line 88.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Manager.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Manager')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Manager')
+ 4 SYSTEMPATH\CodeIgniter.php(848): class_exists('\\App\\Controllers\\Manager', true)
+ 5 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-08 07:12:38 --> Array to string conversion
+in APPPATH\Views\manager\show.php on line 55.
+ 1 APPPATH\Views\manager\show.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\manager\\show.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\manager\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('manager/show.php', [], true)
+ 5 APPPATH\Controllers\Manager.php(92): view('manager/show.php', [...])
+ 6 APPPATH\Controllers\Manager.php(37): App\Controllers\Manager->getEvaluatorsSubmissions('1')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Manager->index('1')
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-08 07:13:04 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\manager\show.php on line 55.
+ 1 APPPATH\Views\manager\show.php(55): join([...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\manager\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('manager/show.php', [], true)
+ 5 APPPATH\Controllers\Manager.php(92): view('manager/show.php', [...])
+ 6 APPPATH\Controllers\Manager.php(37): App\Controllers\Manager->getEvaluatorsSubmissions('1')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Manager->index('1')
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-08 07:13:27 --> Attempt to read property "employee_id" on array
+in APPPATH\Views\manager\show.php on line 55.
+ 1 APPPATH\Views\manager\show.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "employee_id" on array', 'APPPATH\\Views\\manager\\show.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\manager\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('manager/show.php', [], true)
+ 5 APPPATH\Controllers\Manager.php(92): view('manager/show.php', [...])
+ 6 APPPATH\Controllers\Manager.php(37): App\Controllers\Manager->getEvaluatorsSubmissions('1')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Manager->index('1')
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-08 07:14:25 --> Undefined array key "employee_id"
+in APPPATH\Views\manager\show.php on line 55.
+ 1 APPPATH\Views\manager\show.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "employee_id"', 'APPPATH\\Views\\manager\\show.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\manager\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('manager/show.php', [], true)
+ 5 APPPATH\Controllers\Manager.php(92): view('manager/show.php', [...])
+ 6 APPPATH\Controllers\Manager.php(37): App\Controllers\Manager->getEvaluatorsSubmissions('1')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Manager->index('1')
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-08 07:17:26 --> Array to string conversion
+in APPPATH\Views\manager\show.php on line 55.
+ 1 APPPATH\Views\manager\show.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\manager\\show.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\manager\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('manager/show.php', [], true)
+ 5 APPPATH\Controllers\Manager.php(92): view('manager/show.php', [...])
+ 6 APPPATH\Controllers\Manager.php(37): App\Controllers\Manager->getEvaluatorsSubmissions('1')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Manager->index('1')
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-08 07:24:47 --> Cannot use object of type stdClass as array
+in APPPATH\Views\manager\show.php on line 58.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('manager/show.php', [], true)
+ 4 APPPATH\Controllers\Manager.php(92): view('manager/show.php', [...])
+ 5 APPPATH\Controllers\Manager.php(37): App\Controllers\Manager->getEvaluatorsSubmissions('1')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Manager->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-08 07:29:56 --> count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Views\manager\show.php on line 71.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('manager/show.php', [], true)
+ 4 APPPATH\Controllers\Manager.php(92): view('manager/show.php', [...])
+ 5 APPPATH\Controllers\Manager.php(37): App\Controllers\Manager->getEvaluatorsSubmissions('1')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Manager->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-08 08:04:38 --> Undefined property: stdClass::$5
+in APPPATH\Views\manager\show.php on line 64.
+ 1 APPPATH\Views\manager\show.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$5', 'APPPATH\\Views\\manager\\show.php', 64)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\manager\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('manager/show.php', [], true)
+ 5 APPPATH\Controllers\Manager.php(92): view('manager/show.php', [...])
+ 6 APPPATH\Controllers\Manager.php(37): App\Controllers\Manager->getEvaluatorsSubmissions('1')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Manager->index('1')
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-08 09:06:47 --> Undefined variable $evaluation
+in APPPATH\Views\manager\show.php on line 56.
+ 1 APPPATH\Views\manager\show.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evaluation', 'APPPATH\\Views\\manager\\show.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\manager\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('manager/show.php', [], true)
+ 5 APPPATH\Controllers\Manager.php(92): view('manager/show.php', [...])
+ 6 APPPATH\Controllers\Manager.php(37): App\Controllers\Manager->getEvaluatorsSubmissions('1')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Manager->index('1')
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-08 09:14:03 --> syntax error, unexpected token "?"
+in APPPATH\Views\manager\show.php on line 53.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('manager/show.php', [], true)
+ 3 APPPATH\Controllers\Manager.php(92): view('manager/show.php', [...])
+ 4 APPPATH\Controllers\Manager.php(37): App\Controllers\Manager->getEvaluatorsSubmissions('1')
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Manager->index('1')
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-08 10:19:07 --> Undefined variable $evaluation_id
+in APPPATH\Views\manager\show.php on line 83.
+ 1 APPPATH\Views\manager\show.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evaluation_id', 'APPPATH\\Views\\manager\\show.php', 83)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\manager\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('manager/show.php', [], true)
+ 5 APPPATH\Controllers\Manager.php(92): view('manager/show.php', [...])
+ 6 APPPATH\Controllers\Manager.php(37): App\Controllers\Manager->getEvaluatorsSubmissions('1')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Manager->index('1')
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-08 10:25:36 --> Undefined property: stdClass::$manager_id
+in APPPATH\Views\manager\show.php on line 84.
+ 1 APPPATH\Views\manager\show.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$manager_id', 'APPPATH\\Views\\manager\\show.php', 84)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\manager\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('manager/show.php', [], true)
+ 5 APPPATH\Controllers\Manager.php(92): view('manager/show.php', [...])
+ 6 APPPATH\Controllers\Manager.php(37): App\Controllers\Manager->getEvaluatorsSubmissions('1')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Manager->index('1')
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-08 10:25:39 --> Undefined property: stdClass::$manager_id
+in APPPATH\Views\manager\show.php on line 84.
+ 1 APPPATH\Views\manager\show.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$manager_id', 'APPPATH\\Views\\manager\\show.php', 84)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\manager\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('manager/show.php', [], true)
+ 5 APPPATH\Controllers\Manager.php(92): view('manager/show.php', [...])
+ 6 APPPATH\Controllers\Manager.php(37): App\Controllers\Manager->getEvaluatorsSubmissions('1')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Manager->index('1')
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

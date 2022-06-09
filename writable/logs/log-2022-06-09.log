@@ -1,0 +1,108 @@
+ERROR - 2022-06-09 04:10:18 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2022-06-09 04:10:18 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 415.
+ 1 SYSTEMPATH\Database\BaseConnection.php(585): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Employee.php(61): CodeIgniter\Database\BaseConnection->query('SELECT
+                    emp.*
+                FROM
+                    `employee_view` emp
+                LEFT JOIN `employee_view` mang ON
+                    emp.manager_id = mang.employee_id
+                WHERE
+                    mang.employee_id IS NOT NULL AND emp.employee_id <>(
+                    SELECT
+                        evaluators.employee_id
+                    FROM
+                        evaluators
+                    WHERE
+                        evaluators.evaluator_id = :id:
+                ) AND emp.department =(
+                    SELECT
+                        department
+                    FROM
+                        employee_view
+                    WHERE
+                        employee_id =(
+                        SELECT
+                            evaluators.employee_id
+                        FROM
+                            evaluators
+                        WHERE
+                            evaluators.evaluator_id = :id:
+                    )
+                )', [...])
+ 3 APPPATH\Controllers\Evaluator.php(13): App\Controllers\Employee->getDepartmentEmployees('2')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Evaluator->index('2')
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluator))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-09 04:58:03 --> Undefined variable $groupedSubmissions
+in APPPATH\Views\reports\all-records.php on line 33.
+ 1 APPPATH\Views\reports\all-records.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $groupedSubmissions', 'APPPATH\\Views\\reports\\all-records.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\reports\\all-records.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('reports/all-records', [], true)
+ 5 APPPATH\Controllers\Report.php(16): view('reports/all-records', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Report->showAll()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-09 04:59:46 --> Undefined property: stdClass::$evaluation_year
+in APPPATH\Views\reports\all-records.php on line 42.
+ 1 APPPATH\Views\reports\all-records.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$evaluation_year', 'APPPATH\\Views\\reports\\all-records.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\reports\\all-records.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('reports/all-records', [], true)
+ 5 APPPATH\Controllers\Report.php(16): view('reports/all-records', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Report->showAll()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-09 05:03:17 --> Undefined variable $eval
+in APPPATH\Views\reports\all-records.php on line 56.
+ 1 APPPATH\Views\reports\all-records.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $eval', 'APPPATH\\Views\\reports\\all-records.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\reports\\all-records.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('reports/all-records', [], true)
+ 5 APPPATH\Controllers\Report.php(16): view('reports/all-records', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Report->showAll()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-09 05:28:18 --> Undefined property: stdClass::$employee_name
+in APPPATH\Views\reports\rejections.php on line 38.
+ 1 APPPATH\Views\reports\rejections.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$employee_name', 'APPPATH\\Views\\reports\\rejections.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\reports\\rejections.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('reports/rejections', [], true)
+ 5 APPPATH\Controllers\Report.php(22): view('reports/rejections', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Report->showRejections()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-09 06:52:59 --> Invalid file: welcome_message.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('welcome_message.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('welcome_message', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('welcome_message')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-09 06:55:59 --> Invalid file: welcome_message.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('welcome_message.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('welcome_message', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('welcome_message')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
