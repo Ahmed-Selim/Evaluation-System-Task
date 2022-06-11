@@ -6,5 +6,5 @@
 
 ## ShowCase Record
 
-[![Watch the video](/HomePage.JPG)](/Evaluation-System.mp4)
+[![Watch the video](/HomePage.JPG)](https://drive.google.com/file/d/1D-MXP5nVovQB87PDi65J-jHPP7u7MIx_/view?usp=sharing)
 
