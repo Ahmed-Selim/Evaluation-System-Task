@@ -36,15 +36,22 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/custom', 'Home::custom');
-$routes->get('/employees', 'Employee::Employees');
 
-$routes->get('/evaluators/(:num)', 'Evaluator::index/$1');
+$routes->post('/sign-in', 'Home::sign_in');
+$routes->get('/sign-out', 'Home::sign_out');
+
+// $routes->get('/employees', 'Employee::Employees');
+$routes->get('/employees', 'Employee::show');
+
+$routes->get('/evaluators', 'Evaluator::index');
 
 $routes->post('/evaluations', 'Evaluation::store');
 $routes->post('/evaluations/(:num)', 'Evaluation::update/$1');
 
 $routes->get('/managers/(:num)', 'Manager::index/$1');
+
+$routes->get('reports/all-records', 'Report::showAll');
+$routes->get('reports/rejections', 'Report::showRejections');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jun 09, 2022 at 11:51 AM
+-- Generation Time: Jun 11, 2022 at 12:14 PM
 -- Server version: 8.0.27
 -- PHP Version: 8.0.13
 
@@ -53,11 +53,19 @@ INSERT INTO `competency_reports` (`competency_report_id`, `employee_id`, `evalua
 (1, 4, 1, 5, 1, 5, NULL, '2022-06-07 12:28:27', '2022-06-08 15:10:24'),
 (2, 4, 1, 5, 2, 2, '[2, 2, 1, 2, 3, 5, 1, 1, 2, 3, 4, 5]', '2022-06-07 17:16:36', '2022-06-09 10:17:25'),
 (3, 15, 4, 5, 3, 3, '[1, 5, 5, 4, 3, 2, 3, 5, 5, 4, 1, 3]', '2022-06-08 08:10:12', '2022-06-08 08:10:12'),
-(4, 5, 2, 5, 1, 4, NULL, '2022-06-08 08:30:31', '2022-06-08 15:31:14'),
+(4, 5, 2, 4, 1, 4, NULL, '2022-06-08 08:30:31', '2022-06-08 15:31:14'),
 (6, 6, 2, 5, 2, 3, NULL, '2022-06-09 09:24:27', '2022-06-09 09:45:43'),
 (7, 6, 2, 5, 2, 4, NULL, '2022-06-09 09:27:58', '2022-06-09 10:17:24'),
 (14, 3, 1, 5, 1, 5, NULL, '2022-06-09 11:37:21', '2022-06-09 11:37:40'),
-(15, 6, 2, 5, 2, 3, '[5, 4, 3, 2, 1, 5, 5, 3, 3, 4, 5, 1]', '2022-06-09 11:38:43', '2022-06-09 11:39:00');
+(15, 6, 2, 5, 2, 3, '[5, 4, 3, 2, 1, 5, 5, 3, 3, 4, 5, 1]', '2022-06-09 11:38:43', '2022-06-09 11:39:00'),
+(16, 3, 1, 5, 3, 1, NULL, '2022-06-11 11:00:07', '2022-06-11 11:00:07'),
+(17, 3, 1, 5, 3, 1, NULL, '2022-06-11 11:08:25', '2022-06-11 11:08:25'),
+(23, 3, 1, 5, 3, 5, NULL, '2022-06-11 11:26:23', '2022-06-11 11:26:23'),
+(24, 14, 4, 5, 2, 5, NULL, '2022-06-11 11:48:01', '2022-06-11 12:13:41'),
+(25, 15, 4, 5, 1, 1, NULL, '2022-06-11 11:48:15', '2022-06-11 12:13:28'),
+(26, 16, 4, 5, 3, 2, NULL, '2022-06-11 11:48:48', '2022-06-11 11:48:48'),
+(32, 16, 4, 5, 3, 2, '[1, 1, 1, 2, 2, 2, 3, 3, 3, 1, 2, 3]', '2022-06-11 12:10:52', '2022-06-11 12:10:52'),
+(33, 15, 4, 5, 3, 2, NULL, '2022-06-11 12:11:10', '2022-06-11 12:11:10');
 
 -- --------------------------------------------------------
 
@@ -120,6 +128,7 @@ CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `email` varchar(150) NOT NULL,
+  `password` varchar(150) NOT NULL,
   `department_id` int NOT NULL,
   `manager_id` int DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -134,23 +143,23 @@ CREATE TABLE IF NOT EXISTS `employees` (
 -- Dumping data for table `employees`
 --
 
-INSERT INTO `employees` (`employee_id`, `name`, `email`, `department_id`, `manager_id`, `created_at`, `updated_at`) VALUES
-(1, 'Ahmed', 'ahmed@email.com', 1, NULL, '2022-06-07 08:57:18', '2022-06-07 08:57:18'),
-(2, 'Joe', 'Joe@email', 1, 1, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
-(3, 'Henry', 'Henry@email', 1, 1, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
-(4, 'Mike', 'Mike@email', 1, 1, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
-(5, 'David', 'David@email', 1, 1, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
-(6, 'Roger', 'Roger@email', 1, 1, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
-(7, 'Mona', 'Mona@email', 2, NULL, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
-(8, 'Sam', 'Sam@email', 2, 7, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
-(9, 'Joseph', 'Joseph@email', 2, 7, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
-(10, 'Ben', 'Ben@email', 2, 7, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
-(11, 'Ali', 'Ali@email', 2, 7, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
-(12, 'Khalid', 'Khalid@email', 3, NULL, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
-(13, 'Max', 'Max@email', 3, 12, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
-(14, 'Marry', 'Marry@email', 3, 12, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
-(15, 'Aya', 'Aya@email', 3, 12, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
-(16, 'May', 'May@email', 3, 12, '2022-06-07 10:21:55', '2022-06-07 10:21:55');
+INSERT INTO `employees` (`employee_id`, `name`, `email`, `password`, `department_id`, `manager_id`, `created_at`, `updated_at`) VALUES
+(1, 'Ahmed', 'ahmed@email.com', '$2y$10$Pu3TJmqtuQpF5I2QpzrBZu2965474pL2LuXZZHnBZbY4La4v.6Uaq', 1, NULL, '2022-06-07 08:57:18', '2022-06-07 08:57:18'),
+(2, 'Joe', 'joe@email.com', '$2y$10$Pu3TJmqtuQpF5I2QpzrBZu2965474pL2LuXZZHnBZbY4La4v.6Uaq', 1, 1, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
+(3, 'Henry', 'henry@email.com', '$2y$10$Pu3TJmqtuQpF5I2QpzrBZu2965474pL2LuXZZHnBZbY4La4v.6Uaq', 1, 1, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
+(4, 'Mike', 'mike@email.com', '$2y$10$Pu3TJmqtuQpF5I2QpzrBZu2965474pL2LuXZZHnBZbY4La4v.6Uaq', 1, 1, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
+(5, 'David', 'david@email.com', '$2y$10$Pu3TJmqtuQpF5I2QpzrBZu2965474pL2LuXZZHnBZbY4La4v.6Uaq', 1, 1, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
+(6, 'Roger', 'roger@email.com', '$2y$10$Pu3TJmqtuQpF5I2QpzrBZu2965474pL2LuXZZHnBZbY4La4v.6Uaq', 1, 1, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
+(7, 'Mona', 'mona@email.com', '$2y$10$Pu3TJmqtuQpF5I2QpzrBZu2965474pL2LuXZZHnBZbY4La4v.6Uaq', 2, NULL, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
+(8, 'Sam', 'sam@email.com', '$2y$10$Pu3TJmqtuQpF5I2QpzrBZu2965474pL2LuXZZHnBZbY4La4v.6Uaq', 2, 7, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
+(9, 'Joseph', 'joseph@email.com', '$2y$10$Pu3TJmqtuQpF5I2QpzrBZu2965474pL2LuXZZHnBZbY4La4v.6Uaq', 2, 7, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
+(10, 'Ben', 'ben@email.com', '$2y$10$Pu3TJmqtuQpF5I2QpzrBZu2965474pL2LuXZZHnBZbY4La4v.6Uaq', 2, 7, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
+(11, 'Ali', 'ali@email.com', '$2y$10$Pu3TJmqtuQpF5I2QpzrBZu2965474pL2LuXZZHnBZbY4La4v.6Uaq', 2, 7, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
+(12, 'Khalid', 'khalid@email.com', '$2y$10$Pu3TJmqtuQpF5I2QpzrBZu2965474pL2LuXZZHnBZbY4La4v.6Uaq', 3, NULL, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
+(13, 'Max', 'max@email.com', '$2y$10$Pu3TJmqtuQpF5I2QpzrBZu2965474pL2LuXZZHnBZbY4La4v.6Uaq', 3, 12, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
+(14, 'Marry', 'marry@email.com', '$2y$10$Pu3TJmqtuQpF5I2QpzrBZu2965474pL2LuXZZHnBZbY4La4v.6Uaq', 3, 12, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
+(15, 'Aya', 'aya@email.com', '$2y$10$Pu3TJmqtuQpF5I2QpzrBZu2965474pL2LuXZZHnBZbY4La4v.6Uaq', 3, 12, '2022-06-07 10:21:55', '2022-06-07 10:21:55'),
+(16, 'May', 'may@email.com', '$2y$10$Pu3TJmqtuQpF5I2QpzrBZu2965474pL2LuXZZHnBZbY4La4v.6Uaq', 3, 12, '2022-06-07 10:21:55', '2022-06-07 10:21:55');
 
 -- --------------------------------------------------------
 
@@ -160,15 +169,16 @@ INSERT INTO `employees` (`employee_id`, `name`, `email`, `department_id`, `manag
 --
 DROP VIEW IF EXISTS `employee_view`;
 CREATE TABLE IF NOT EXISTS `employee_view` (
-`employee_id` int
-,`employee_name` varchar(50)
-,`employee_email` varchar(150)
+`department` varchar(50)
 ,`employee_created_at` timestamp
+,`employee_email` varchar(150)
+,`employee_id` int
+,`employee_name` varchar(50)
+,`employee_pass` varchar(150)
 ,`employee_updated_at` timestamp
-,`department` varchar(50)
+,`manager_email` varchar(150)
 ,`manager_id` int
 ,`manager_name` varchar(50)
-,`manager_email` varchar(150)
 );
 
 -- --------------------------------------------------------
@@ -235,11 +245,11 @@ INSERT INTO `evaluation_period_statuses` (`status_id`, `status`, `created_at`, `
 --
 DROP VIEW IF EXISTS `evaluation_period_view`;
 CREATE TABLE IF NOT EXISTS `evaluation_period_view` (
-`evaluation_period_id` int
+`created_at` timestamp
 ,`evaluation_period` varchar(50)
+,`evaluation_period_id` int
 ,`evaluation_year` year
 ,`status` varchar(50)
-,`created_at` timestamp
 ,`updated_at` timestamp
 );
 
@@ -251,27 +261,27 @@ CREATE TABLE IF NOT EXISTS `evaluation_period_view` (
 --
 DROP VIEW IF EXISTS `evaluation_view`;
 CREATE TABLE IF NOT EXISTS `evaluation_view` (
-`evaluation_id` int
+`created_at` timestamp
+,`department` varchar(50)
+,`employee_created_at` timestamp
+,`employee_email` varchar(150)
 ,`employee_id` int
 ,`employee_name` varchar(50)
-,`employee_email` varchar(150)
-,`employee_created_at` timestamp
 ,`employee_updated_at` timestamp
-,`department` varchar(50)
+,`evaluation_id` int
+,`evaluation_period_id` int
+,`evaluation_score` tinyint
+,`evaluation_status` varchar(50)
+,`evaluator_created_at` timestamp
+,`evaluator_email` varchar(150)
+,`evaluator_employee_id` int
+,`evaluator_id` int
+,`evaluator_name` varchar(50)
+,`evaluator_updated_at` timestamp
+,`manager_email` varchar(150)
 ,`manager_id` int
 ,`manager_name` varchar(50)
-,`manager_email` varchar(150)
-,`evaluator_id` int
-,`evaluator_employee_id` int
-,`evaluator_name` varchar(50)
-,`evaluator_email` varchar(150)
-,`evaluator_created_at` timestamp
-,`evaluator_updated_at` timestamp
-,`evaluation_period_id` int
-,`evaluation_status` varchar(50)
-,`evaluation_score` tinyint
 ,`survey_ans` json
-,`created_at` timestamp
 ,`updated_at` timestamp
 );
 
@@ -299,7 +309,7 @@ CREATE TABLE IF NOT EXISTS `evaluators` (
 
 INSERT INTO `evaluators` (`evaluator_id`, `employee_id`, `evaluation_period_id`, `created_at`, `updated_at`) VALUES
 (1, 2, 5, '2022-06-07 10:24:28', '2022-06-07 10:24:28'),
-(2, 3, 5, '2022-06-07 10:24:28', '2022-06-07 10:24:28'),
+(2, 3, 4, '2022-06-07 10:24:28', '2022-06-07 10:24:28'),
 (3, 8, 5, '2022-06-07 10:24:28', '2022-06-07 10:24:28'),
 (4, 13, 5, '2022-06-07 10:24:28', '2022-06-07 10:24:28');
 
@@ -311,22 +321,22 @@ INSERT INTO `evaluators` (`evaluator_id`, `employee_id`, `evaluation_period_id`,
 --
 DROP VIEW IF EXISTS `evaluator_view`;
 CREATE TABLE IF NOT EXISTS `evaluator_view` (
-`evaluator_id` int
+`department` varchar(50)
+,`employee_created_at` timestamp
+,`employee_email` varchar(150)
 ,`employee_id` int
 ,`employee_name` varchar(50)
-,`employee_email` varchar(150)
-,`employee_created_at` timestamp
 ,`employee_updated_at` timestamp
-,`department` varchar(50)
+,`evaluation_period` varchar(50)
+,`evaluation_period_id` int
+,`evaluation_period_status` varchar(50)
+,`evaluation_year` year
+,`evaluator_created_at` timestamp
+,`evaluator_id` int
+,`evaluator_updated_at` timestamp
+,`manager_email` varchar(150)
 ,`manager_id` int
 ,`manager_name` varchar(50)
-,`manager_email` varchar(150)
-,`evaluation_period_id` int
-,`evaluation_period` varchar(50)
-,`evaluation_year` year
-,`evaluation_period_status` varchar(50)
-,`evaluator_created_at` timestamp
-,`evaluator_updated_at` timestamp
 );
 
 -- --------------------------------------------------------
@@ -337,7 +347,7 @@ CREATE TABLE IF NOT EXISTS `evaluator_view` (
 DROP TABLE IF EXISTS `employee_view`;
 
 DROP VIEW IF EXISTS `employee_view`;
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `employee_view`  AS SELECT `emp`.`employee_id` AS `employee_id`, `emp`.`name` AS `employee_name`, `emp`.`email` AS `employee_email`, `emp`.`created_at` AS `employee_created_at`, `emp`.`updated_at` AS `employee_updated_at`, `depart`.`name` AS `department`, `mang`.`employee_id` AS `manager_id`, `mang`.`name` AS `manager_name`, `mang`.`email` AS `manager_email` FROM ((`employees` `emp` left join `departments` `depart` on((`emp`.`department_id` = `depart`.`department_id`))) left join `employees` `mang` on((`emp`.`manager_id` = `mang`.`employee_id`))) ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `employee_view`  AS SELECT `emp`.`employee_id` AS `employee_id`, `emp`.`name` AS `employee_name`, `emp`.`email` AS `employee_email`, `emp`.`password` AS `employee_pass`, `emp`.`created_at` AS `employee_created_at`, `emp`.`updated_at` AS `employee_updated_at`, `depart`.`name` AS `department`, `mang`.`employee_id` AS `manager_id`, `mang`.`name` AS `manager_name`, `mang`.`email` AS `manager_email` FROM ((`employees` `emp` left join `departments` `depart` on((`emp`.`department_id` = `depart`.`department_id`))) left join `employees` `mang` on((`emp`.`manager_id` = `mang`.`employee_id`))) ;
 
 -- --------------------------------------------------------
 

@@ -1,0 +1,1 @@
+__ci_last_regenerate|i:1654940432;_ci_previous_url|s:43:"http://localhost:8080/index.php/employees/1";employee_id|i:1;employee_name|s:5:"Ahmed";employee_email|s:15:"ahmed@email.com";employee_created_at|s:19:"2022-06-07 10:57:18";employee_updated_at|s:19:"2022-06-07 10:57:18";department|s:2:"IT";manager_id|i:0;manager_name|N;manager_email|N;evaluator_id|i:0;role|s:7:"Manager";

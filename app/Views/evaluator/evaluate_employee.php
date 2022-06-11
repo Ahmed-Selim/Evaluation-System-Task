@@ -1,30 +1,12 @@
-<?php
-    if (isset($_GET['survey_ans'])) {
-        foreach ($_GET['survey_ans'] as $val) {
-            echo $val . ' ' ;
-        }
-    }
-?>
+<?= $this->extend('app/layout.php') ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evaluate Employees</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <style>
-        html, body {
-            height: 100%;
-        }
-    </style>
-</head>
-<body class="text-center d-flex">
 
+<?= $this->section('title') ?> Evaluate Employees <?= $this->endSection() ?>
+
+<?= $this->section('content') ?>
+<h1 class="text-center">Evaluate Employee</h1>
     <main class="m-auto border rounded-5 p-3 w-50">
         <form class="p-2" method="POST" action="<?= site_url('/evaluations') ?>">
-            <h1 class="h3 mb-3 fw-normal">Evaluate Employee</h1>
 
             <input type="hidden" name="evaluator_id" value="<?= esc($auth_id) ?>">
 
@@ -91,37 +73,30 @@
 
         </form>
     </main>
-    <?php
+<?= $this->endSection() ?>
 
-    // foreach ($employees as $employee) {
-    //     echo $employee->employee_name . ' | ';
-    //         echo $employee->employee_email . ' | ';
-    //         echo $employee->department . ' <br> ';
-    // }
-    ?>
+<?= $this->section('script') ?>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-<script>    
-    function show (id) {
-        let score = document.getElementById('competency_score'),
-            survey = document.getElementById('competency_survey'),
-            score_input = document.getElementById('score_input'),
-            questions = document.getElementsByClassName('list-group-item');
+    <script>
+        function show (id) {
+            let score = document.getElementById('competency_score'),
+                survey = document.getElementById('competency_survey'),
+                score_input = document.getElementById('score_input'),
+                questions = document.getElementsByClassName('list-group-item');
         
-        if (id == 'survey') {
-            score.style.display = 'none';
-            survey.style.display = '';
-            score_input.removeAttribute("required");
-            score_input.value = '' ;
-            [].forEach.call(questions, function (q) { q.setAttribute("required","required") });
-        } 
-        else if (id == 'score') {
-            score.style.display = '';
-            survey.style.display = 'none';
-            score_input.setAttribute("required","required");
-            [].forEach.call(questions, function (q) { q.removeAttribute("required"); q.value = '' });
+            if (id == 'survey') {
+                score.style.display = 'none';
+                survey.style.display = '';
+                score_input.removeAttribute("required");
+                score_input.value = '' ;
+                [].forEach.call(questions, function (q) { q.setAttribute("required","required") });
+            }
+            else if (id == 'score') {
+                score.style.display = '';
+                survey.style.display = 'none';
+                score_input.setAttribute("required","required");
+                [].forEach.call(questions, function (q) { q.removeAttribute("required"); q.value = '' });
+            }
         }
-    }
-</script>
-</body>
-</html>
+    </script>
+<?= $this->endSection() ?>

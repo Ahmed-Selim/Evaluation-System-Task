@@ -41,13 +41,13 @@ class Report extends BaseController
             LEFT JOIN evaluation_period_view period ON
                 eval.evaluation_period_id = period.evaluation_period_id
             WHERE
-                evaluation_status = "Rejected"
+                evaluation_status = "Rejected" AND department = :depart:
             GROUP BY 
                 manager_id, eval.`evaluation_period_id`
             ORDER BY
                 department,
                 manager_id,
-                eval.evaluation_period_id');
+                eval.evaluation_period_id',['depart' => session()->department]);
         return $query->getResult();
     }
 
@@ -84,11 +84,11 @@ class Report extends BaseController
             LEFT JOIN evaluation_period_view period ON
                 eval.evaluation_period_id = period.evaluation_period_id
             WHERE
-                evaluation_status <> "Rejected"
+                evaluation_status <> "Rejected"  AND department = :depart:
             ORDER BY
                 department,
                 evaluation_period_id,
-                employee_id');
+                employee_id',['depart' => session()->department]);
         return $query->getResult();
     }
 }

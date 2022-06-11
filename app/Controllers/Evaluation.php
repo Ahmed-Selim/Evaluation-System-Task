@@ -17,37 +17,38 @@ class Evaluation extends BaseController
             'evaluation_period_id' => intval($this->request->getVar('evaluation_period_id')) ,
             'employee_id' => intval($this->request->getVar('employee_id')) ,
             'score' => $competency['score'] ,
-            'survey_ans' => json_encode($competency['survey_ans'])
+            'survey_ans' => $competency['survey_ans'] ? json_encode($competency['survey_ans']) : NULL
         ];
 
-        // var_dump($request);
-
+        // var_dump($request['survey_ans']);
+        // die();
         $db = db_connect();
         $sql = 'INSERT INTO `competency_reports`(
                     `employee_id`,
                     `evaluator_id`,
                     `evaluation_period_id`,
                     `status_id`,
-                    `score`,
-                    `survey_ans`
+                    `score`'
+                    . ($request['survey_ans'] ? ',`survey_ans`' : '') .'
                 )
                 VALUES(
                     :employee_id:,
                     :evaluator_id:,
                     :evaluation_period_id:,
                     3,
-                    :score:,
-                    :survey_ans:
+                    :score:'
+                    . ($request['survey_ans'] ? ', :survey_ans: ' : '') .'
                 )';
+
         $db->query($sql, [ 
             'employee_id' => $request['employee_id'] ,
             'evaluator_id' => $request['evaluator_id'] ,
             'evaluation_period_id' => $request['evaluation_period_id'] ,
             'score' => $request['score'] ,
-            'survey_ans' => $request['survey_ans'] 
+            'survey_ans' => $request['survey_ans']
         ]);
 
-        return (new Evaluator())->index($request['evaluator_id']);
+        return redirect()->to('/evaluators') ;
     }
 
     public function update($evaluation_id) {
